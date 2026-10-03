@@ -1,0 +1,519 @@
+{
+    "$__mpe_config_使用战术影像一次": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2745,
+                "y": 524,
+                "zoom": 0.49
+            },
+            "filename": "使用战术影像一次",
+            "version": "v2.0.6"
+        }
+    },
+    "使用战术影像一次开始": {
+        "next": [
+            "进入拓殖许可界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5843,
+                "y": -547
+            }
+        }
+    },
+    "进入拓殖许可界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    120,
+                    31,
+                    166,
+                    79
+                ],
+                "expected": [
+                    "许可"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入日常合约界面",
+            "[JumpBack]进入拓殖许可界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6254,
+                "y": -595
+            }
+        }
+    },
+    "寻找使用战术影像任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    544,
+                    130,
+                    362,
+                    515
+                ],
+                "expected": [
+                    "战术影像"
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "next": [
+            "战术影像任务未完成",
+            "战术影像任务已经完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7227,
+                "y": -789
+            }
+        }
+    },
+    "滑动日常任务界面": {
+        "max_hit": 10,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    876,
+                    577,
+                    21,
+                    5
+                ],
+                "end": [
+                    [
+                        877,
+                        208,
+                        24,
+                        6
+                    ]
+                ],
+                "duration": [
+                    2500
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7267,
+                "y": -447
+            }
+        }
+    },
+    "未找到任务-任务结束": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7258,
+                "y": -77
+            }
+        }
+    },
+    "战术影像任务未完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找使用战术影像任务",
+                "roi_offset": [
+                    319,
+                    27,
+                    49,
+                    32
+                ],
+                "expected": [
+                    "未完成"
+                ]
+            }
+        },
+        "next": [
+            "进入角色养成界面",
+            "[JumpBack]返回一次主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7689,
+                "y": -1080
+            }
+        }
+    },
+    "战术影像任务已经完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找使用战术影像任务",
+                "roi_offset": [
+                    319,
+                    27,
+                    49,
+                    32
+                ],
+                "expected": [
+                    "完成"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7699,
+                "y": -743
+            }
+        }
+    },
+    "进入日常合约界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    538,
+                    72,
+                    692,
+                    65
+                ],
+                "expected": [
+                    "日常合约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入日常合约界面_第二次",
+            "寻找使用战术影像任务",
+            "[JumpBack]滑动日常任务界面",
+            "未找到任务-任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6710,
+                "y": -553
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_使用战术影像一次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9410,
+                "y": 32
+            }
+        }
+    },
+    "返回一次主界面开始": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8207,
+                "y": -1194
+            }
+        }
+    },
+    "进入角色养成界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1014,
+                    87,
+                    133,
+                    451
+                ],
+                "expected": [
+                    "角色养成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入角色养成界面_第二次",
+            "角色养成滑动至底端"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8623,
+                "y": -903
+            }
+        }
+    },
+    "角色养成滑动至底端": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    635,
+                    640,
+                    5,
+                    10
+                ],
+                "end": [
+                    [
+                        636,
+                        69,
+                        5,
+                        19
+                    ]
+                ]
+            }
+        },
+        "repeat": 5,
+        "post_delay": 2000,
+        "next": [
+            "选择任意角色"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9317,
+                "y": -786
+            }
+        }
+    },
+    "进入角色养成界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1014,
+                    87,
+                    133,
+                    451
+                ],
+                "expected": [
+                    "角色养成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8979,
+                "y": -1095
+            }
+        }
+    },
+    "进入拓殖许可界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    120,
+                    31,
+                    166,
+                    79
+                ],
+                "expected": [
+                    "许可"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6546,
+                "y": -279
+            }
+        }
+    },
+    "进入日常合约界面_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    538,
+                    72,
+                    692,
+                    65
+                ],
+                "expected": [
+                    "日常合约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7044,
+                "y": -1076
+            }
+        }
+    },
+    "选择任意角色": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    596,
+                    1238,
+                    99
+                ],
+                "expected": [
+                    "LV",
+                    "IV"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择等级界面",
+            "[JumpBack]选择任意角色_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9802,
+                "y": -742
+            }
+        }
+    },
+    "选择等级界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1159,
+                    128,
+                    74,
+                    34
+                ],
+                "expected": [
+                    "LV",
+                    "IV",
+                    "."
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "使用一次最低级的经验书",
+            "[JumpBack]选择等级界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10190,
+                "y": -706
+            }
+        }
+    },
+    "使用一次最低级的经验书": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    685,
+                    467,
+                    487,
+                    165
+                ],
+                "template": [
+                    "蓝色经验材料.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10587,
+                "y": -804
+            }
+        }
+    },
+    "选择任意角色_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    596,
+                    1238,
+                    99
+                ],
+                "expected": [
+                    "LV",
+                    "IV"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10049,
+                "y": -963
+            }
+        }
+    },
+    "选择等级界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1159,
+                    128,
+                    74,
+                    34
+                ],
+                "expected": [
+                    "LV",
+                    "IV",
+                    "."
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10435,
+                "y": -1017
+            }
+        }
+    }
+}

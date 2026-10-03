@@ -1,0 +1,418 @@
+{
+    "$__mpe_config_返回主界面": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790931589069,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\返回主界面.json",
+            "savedViewport": {
+                "x": -486,
+                "y": 632,
+                "zoom": 0.49
+            },
+            "filename": "返回主界面",
+            "version": "v2.0.6"
+        }
+    },
+    "下方点击文字返回": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    517,
+                    650,
+                    251,
+                    53
+                ],
+                "expected": [
+                    "点击",
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2179,
+                "y": 1208
+            }
+        }
+    },
+    "不需要启动游戏": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1026,
+                "y": -93
+            }
+        }
+    },
+    "主界面判断1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    114,
+                    28,
+                    172,
+                    70
+                ],
+                "expected": [
+                    "拓殖",
+                    "许可"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2106,
+                "y": -1106
+            }
+        }
+    },
+    "主界面判断2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1093,
+                    658,
+                    150,
+                    53
+                ],
+                "expected": [
+                    "作战"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2545,
+                "y": -1102
+            }
+        }
+    },
+    "关闭公告界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    945,
+                    130,
+                    97,
+                    97
+                ],
+                "template": [
+                    "白色叉号图标1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2635,
+                "y": 45
+            }
+        }
+    },
+    "判断是否位于主界面": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "主界面判断1",
+                    "主界面判断2"
+                ]
+            }
+        },
+        "post_delay": 4000,
+        "next": [
+            "判断是否位于主界面_第二次",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2278,
+                "y": -220
+            }
+        }
+    },
+    "判断是否位于主界面_第二次": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "主界面判断1",
+                    "主界面判断2"
+                ]
+            }
+        },
+        "next": [
+            "已位于主界面任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2633,
+                "y": -196
+            }
+        }
+    },
+    "取消退出游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    483,
+                    409,
+                    87,
+                    57
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2617,
+                "y": -473
+            }
+        }
+    },
+    "右上角叉号关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1096,
+                    42,
+                    173,
+                    201
+                ],
+                "template": [
+                    "白色叉号图标1.png",
+                    "黄底黑色叉号图标1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2310,
+                "y": -763
+            }
+        }
+    },
+    "启动游戏开始": {
+        "next": [
+            "是否需要启动游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 161,
+                "y": 60
+            }
+        }
+    },
+    "左上角返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    25,
+                    4,
+                    231,
+                    60
+                ],
+                "template": [
+                    "主菜单图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2226,
+                "y": 873
+            }
+        }
+    },
+    "已位于主界面任务结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2987,
+                "y": -126
+            }
+        }
+    },
+    "开始进入游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    559,
+                    523,
+                    164,
+                    65
+                ],
+                "expected": [
+                    "进入"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2273,
+                "y": 337
+            }
+        }
+    },
+    "是否在公告界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    491,
+                    150,
+                    306,
+                    63
+                ],
+                "expected": [
+                    "公告"
+                ]
+            }
+        },
+        "next": [
+            "关闭公告界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2280,
+                "y": 54
+            }
+        }
+    },
+    "是否有退出菜单": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    562,
+                    341,
+                    155,
+                    42
+                ],
+                "expected": [
+                    "确认退出"
+                ]
+            }
+        },
+        "next": [
+            "取消退出游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2296,
+                "y": -475
+            }
+        }
+    },
+    "是否需要启动游戏": {
+        "next": [
+            "不需要启动游戏",
+            "需要启动游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 540,
+                "y": 60
+            }
+        }
+    },
+    "返回主界面开始": {
+        "next": [
+            "[JumpBack]右上角叉号关闭",
+            "[JumpBack]是否有退出菜单",
+            "判断是否位于主界面",
+            "[JumpBack]是否在公告界面",
+            "[JumpBack]开始进入游戏",
+            "[JumpBack]返回到主菜单",
+            "[JumpBack]左上角返回",
+            "[JumpBack]下方点击文字返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1481,
+                "y": 47
+            }
+        }
+    },
+    "返回到主菜单": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    12,
+                    642,
+                    138,
+                    52
+                ],
+                "expected": [
+                    "格纳库"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2269,
+                "y": 588
+            }
+        }
+    },
+    "需要启动游戏": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.zlongame.pd.mecharashi"
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 997,
+                "y": 169
+            }
+        }
+    }
+}

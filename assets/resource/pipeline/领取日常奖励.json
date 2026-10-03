@@ -1,0 +1,192 @@
+{
+    "$__mpe_config_领取日常奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790931591908,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\领取日常奖励.json",
+            "savedViewport": {
+                "x": -3107,
+                "y": 560,
+                "zoom": 0.75
+            },
+            "filename": "领取日常奖励",
+            "version": "v2.0.6"
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取日常奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5516,
+                "y": -300
+            }
+        }
+    },
+    "无可领取奖励任务结束-日常奖励": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4991,
+                "y": -149
+            }
+        }
+    },
+    "进入拓殖许可界面-日常奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    113,
+                    31,
+                    185,
+                    73
+                ],
+                "expected": [
+                    "许可"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入日常合约界面-日常奖励",
+            "[JumpBack]进入拓殖许可界面-日常奖励_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4221,
+                "y": -609
+            }
+        }
+    },
+    "进入拓殖许可界面-日常奖励_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    113,
+                    31,
+                    185,
+                    73
+                ],
+                "expected": [
+                    "许可"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4502,
+                "y": -290
+            }
+        }
+    },
+    "进入日常合约界面-日常奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    531,
+                    72,
+                    684,
+                    76
+                ],
+                "expected": [
+                    "日常合约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择全部领取奖励-日常奖励",
+            "[JumpBack]进入日常合约界面_第二次-日常奖励",
+            "无可领取奖励任务结束-日常奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4610,
+                "y": -600
+            }
+        }
+    },
+    "进入日常合约界面_第二次-日常奖励": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    531,
+                    72,
+                    684,
+                    76
+                ],
+                "expected": [
+                    "日常合约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4920,
+                "y": -844
+            }
+        }
+    },
+    "选择全部领取奖励-日常奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1068,
+                    159,
+                    141,
+                    210
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5000,
+                "y": -548
+            }
+        }
+    },
+    "领取日常奖励开始": {
+        "next": [
+            "进入拓殖许可界面-日常奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3793,
+                "y": -637
+            }
+        }
+    }
+}
