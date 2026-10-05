@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1791167094259,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -6091,
-                "y": -2014,
-                "zoom": 0.65
+                "x": -7519,
+                "y": -2198,
+                "zoom": 0.76
             },
             "filename": "刷体力",
             "version": "v2.0.6"
@@ -248,6 +252,56 @@
             }
         }
     },
+    "体力不足-前线试炼": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    544,
+                    130,
+                    188,
+                    73
+                ],
+                "expected": [
+                    "恢复能源"
+                ]
+            }
+        },
+        "next": [
+            "扫荡结束-返回主界面-前线试炼"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11351,
+                "y": 1297
+            }
+        }
+    },
+    "体力不足-战术模拟": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    544,
+                    130,
+                    188,
+                    73
+                ],
+                "expected": [
+                    "恢复能源"
+                ]
+            }
+        },
+        "next": [
+            "扫荡结束-返回主界面-战术模拟"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10719,
+                "y": 3189
+            }
+        }
+    },
     "关闭扫荡界面-前线试炼": {
         "recognition": {
             "type": "OCR",
@@ -269,8 +323,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 11343,
-                "y": 1734
+                "x": 11320,
+                "y": 1955
             }
         }
     },
@@ -290,13 +344,16 @@
     "判断剩余演算次数-战术模拟": {
         "next": [
             "剩余演算次数为0-战术模拟",
+            "体力不足-战术模拟",
+            "正在使用扫荡卷-战术模拟",
+            "[JumpBack]确认奖励-战术模拟",
             "[JumpBack]开始扫荡-战术模拟",
-            "[JumpBack]确认奖励-战术模拟"
+            "开始选择哪种芯片-战术模拟"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10265,
-                "y": 3409
+                "x": 10305,
+                "y": 3362
             }
         }
     },
@@ -362,8 +419,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 7106,
-                "y": 1161
+                "x": 7238,
+                "y": 1153
             }
         }
     },
@@ -390,7 +447,7 @@
                     52
                 ],
                 "expected": [
-                    "0/4"
+                    "0"
                 ]
             }
         },
@@ -399,8 +456,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11378,
-                "y": 1066
+                "x": 11308,
+                "y": 1014
             }
         }
     },
@@ -415,7 +472,7 @@
                     59
                 ],
                 "expected": [
-                    "0/3"
+                    "0"
                 ]
             }
         },
@@ -424,8 +481,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10733,
-                "y": 3301
+                "x": 10695,
+                "y": 2947
             }
         }
     },
@@ -456,6 +513,33 @@
             "position": {
                 "x": 8233,
                 "y": 2276
+            }
+        }
+    },
+    "基体搜寻_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    91,
+                    156,
+                    223,
+                    479
+                ],
+                "expected": [
+                    "基体"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8640,
+                "y": 2017
             }
         }
     },
@@ -507,6 +591,7 @@
         },
         "next": [
             "剩余扫荡次数0-前线试炼",
+            "体力不足-前线试炼",
             "[JumpBack]有剩余次数-开始寻找-前线试炼",
             "[JumpBack]关闭扫荡界面-前线试炼"
         ],
@@ -518,10 +603,28 @@
         }
     },
     "开始扫荡-战术模拟": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    835,
+                    551,
+                    239,
+                    136
+                ],
+                "expected": [
+                    "自动演算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
         "$__mpe_code": {
             "position": {
-                "x": 10697,
-                "y": 3700
+                "x": 10764,
+                "y": 3973
             }
         }
     },
@@ -589,7 +692,8 @@
         "next": [
             "红色芯片-战术模拟",
             "蓝色芯片-战术模拟",
-            "黄色芯片-战术模拟"
+            "黄色芯片-战术模拟",
+            "选择芯片演算类型-战术模拟"
         ],
         "$__mpe_code": {
             "position": {
@@ -728,6 +832,32 @@
             }
         }
     },
+    "战术模拟选择自动演算-战术模拟_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    24,
+                    647,
+                    93,
+                    48
+                ],
+                "expected": [
+                    "自动演算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8546,
+                "y": 4091
+            }
+        }
+    },
     "扫荡结束-返回主界面-前线试炼": {
         "next": [
             "返回主界面开始"
@@ -819,8 +949,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 11365,
-                "y": 1348
+                "x": 11356,
+                "y": 1548
             }
         }
     },
@@ -968,10 +1098,27 @@
         }
     },
     "确认奖励-战术模拟": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    544,
+                    643,
+                    199,
+                    65
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "$__mpe_code": {
             "position": {
-                "x": 10642,
-                "y": 4007
+                "x": 10784,
+                "y": 3743
             }
         }
     },
@@ -1130,6 +1277,33 @@
             }
         }
     },
+    "组件获取_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    133,
+                    166,
+                    142,
+                    100
+                ],
+                "expected": [
+                    "组件"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8570,
+                "y": 1430
+            }
+        }
+    },
     "蓝色芯片-战术模拟": {
         "recognition": {
             "type": "OCR",
@@ -1217,6 +1391,32 @@
             }
         }
     },
+    "进入作战中心_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1093,
+                    649,
+                    150,
+                    65
+                ],
+                "expected": [
+                    "作战中心"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5826,
+                "y": 356
+            }
+        }
+    },
     "进入拓展委托界面": {
         "recognition": {
             "type": "OCR",
@@ -1237,13 +1437,39 @@
         },
         "post_delay": 2000,
         "next": [
-            "开始选择扩展委托类型",
-            "[JumpBack]进入拓展委托界面_第二次"
+            "[JumpBack]进入拓展委托界面_第二次",
+            "开始选择扩展委托类型"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 5956,
                 "y": 609
+            }
+        }
+    },
+    "进入拓展委托界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    300,
+                    658,
+                    707,
+                    55
+                ],
+                "expected": [
+                    "拓展委托"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6307,
+                "y": 886
             }
         }
     },
@@ -1267,12 +1493,39 @@
         },
         "post_delay": 2000,
         "next": [
-            "点击扫荡-精英战役"
+            "点击扫荡-精英战役",
+            "[JumpBack]进入第一章白枫市-精英战役_第二次"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 8186,
                 "y": -940
+            }
+        }
+    },
+    "进入第一章白枫市-精英战役_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    438,
+                    233,
+                    216,
+                    81
+                ],
+                "expected": [
+                    "白枫市"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8562,
+                "y": -1176
             }
         }
     },
@@ -1601,8 +1854,10 @@
         }
     },
     "首领剿灭选择关卡结束-首领剿灭": {
+        "post_delay": 1500,
         "next": [
-            "选择扫荡开始-首领剿灭"
+            "选择扫荡开始-首领剿灭",
+            "首领剿灭选择具体关卡-首领剿灭"
         ],
         "$__mpe_code": {
             "position": {
@@ -1682,135 +1937,29 @@
             }
         }
     },
-    "进入作战中心_第二次": {
+    "正在使用扫荡卷-战术模拟": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1093,
-                    649,
-                    150,
-                    65
+                    863,
+                    642,
+                    193,
+                    58
                 ],
-                "expected": [
-                    "作战中心"
-                ]
+                "template": [
+                    "扫荡卷图标.png"
+                ],
+                "green_mask": true
             }
         },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
+        "next": [
+            "扫荡结束-返回主界面-战术模拟"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 5826,
-                "y": 356
-            }
-        }
-    },
-    "进入拓展委托界面_第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    300,
-                    658,
-                    707,
-                    55
-                ],
-                "expected": [
-                    "拓展委托"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6166,
-                "y": 878
-            }
-        }
-    },
-    "组件获取_第二次": {
-        "max_hit": 2,
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    133,
-                    166,
-                    142,
-                    100
-                ],
-                "expected": [
-                    "组件"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 8570,
-                "y": 1430
-            }
-        }
-    },
-    "基体搜寻_第二次": {
-        "max_hit": 2,
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    91,
-                    156,
-                    223,
-                    479
-                ],
-                "expected": [
-                    "基体"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 8640,
-                "y": 2017
-            }
-        }
-    },
-    "战术模拟选择自动演算-战术模拟_第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    24,
-                    647,
-                    93,
-                    48
-                ],
-                "expected": [
-                    "自动演算"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 8546,
-                "y": 4091
+                "x": 10748,
+                "y": 3412
             }
         }
     }

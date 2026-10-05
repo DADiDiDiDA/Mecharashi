@@ -1,14 +1,14 @@
 {
   "interface_version": 2,
   "name": "Mecharashi",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "controller": [
     {
       "name": "桌面端",
       "type": "Win32",
       "win32": {
         "class_regex": ".*",
-        "window_regex": ".*(钢岚|Mecharashi).*",
+        "window_regex": "^(钢岚|Mecharashi).*$",
         "screencap": "PrintWindow",
         "mouse": "PostMessageWithCursorPos",
         "keyboard": "PostMessageWithCursorPos"
@@ -35,6 +35,12 @@
       "default_check": true,
       "option": ["启动游戏"],
       "doc": "从任意界面返回游戏主界面，可选择是否启动游戏"
+    },
+    {
+      "name": "领取邮件",
+      "entry": "领取邮件开始",
+      "default_check": true,
+      "doc": "自动领取邮箱奖励"
     },
     {
       "name": "灰烬行动",
@@ -291,7 +297,10 @@
           "label": "红色芯片",
           "pipeline_override": {
             "开始选择哪种芯片-战术模拟": {
-              "next": ["红色芯片-战术模拟"]
+              "next": [
+                "红色芯片-战术模拟",
+                "选择芯片演算类型-战术模拟"
+              ]
             }
           }
         },
@@ -300,7 +309,10 @@
           "label": "蓝色芯片",
           "pipeline_override": {
             "开始选择哪种芯片-战术模拟": {
-              "next": ["蓝色芯片-战术模拟"]
+              "next": [
+                "蓝色芯片-战术模拟",
+                "选择芯片演算类型-战术模拟"
+              ]
             }
           }
         },
@@ -309,7 +321,10 @@
           "label": "黄色芯片",
           "pipeline_override": {
             "开始选择哪种芯片-战术模拟": {
-              "next": ["黄色芯片-战术模拟"]
+              "next": [
+                "黄色芯片-战术模拟",
+                "选择芯片演算类型-战术模拟"
+              ]
             }
           }
         }
