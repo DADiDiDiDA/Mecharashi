@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790931589069,
+            "lastSyncTime": 1791418243874,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -486,
-                "y": 632,
-                "zoom": 0.49
+                "x": -1038,
+                "y": 122,
+                "zoom": 0.65
             },
             "filename": "返回主界面",
-            "version": "v2.0.6"
+            "version": "v2.0.7"
         }
     },
     "下方点击文字返回": {
@@ -72,8 +72,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2106,
-                "y": -1106
+                "x": 1988,
+                "y": -1362
             }
         }
     },
@@ -94,8 +94,30 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2545,
-                "y": -1102
+                "x": 2446,
+                "y": -1376
+            }
+        }
+    },
+    "主界面判断3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    25,
+                    100,
+                    296,
+                    74
+                ],
+                "template": [
+                    "邮箱图标.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2844,
+                "y": -1392
             }
         }
     },
@@ -131,7 +153,8 @@
             "param": {
                 "all_of": [
                     "主界面判断1",
-                    "主界面判断2"
+                    "主界面判断2",
+                    "主界面判断3"
                 ]
             }
         },
@@ -153,7 +176,8 @@
             "param": {
                 "all_of": [
                     "主界面判断1",
-                    "主界面判断2"
+                    "主界面判断2",
+                    "主界面判断3"
                 ]
             }
         },
@@ -215,8 +239,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2310,
-                "y": -763
+                "x": 2296,
+                "y": -1110
             }
         }
     },
@@ -353,9 +377,32 @@
             }
         }
     },
+    "等待更新结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    534,
+                    221,
+                    210,
+                    87
+                ],
+                "expected": [
+                    "发现新版本"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2318,
+                "y": -759
+            }
+        }
+    },
     "返回主界面开始": {
         "next": [
             "[JumpBack]右上角叉号关闭",
+            "[JumpBack]等待更新结束",
             "[JumpBack]是否有退出菜单",
             "判断是否位于主界面",
             "[JumpBack]是否在公告界面",
