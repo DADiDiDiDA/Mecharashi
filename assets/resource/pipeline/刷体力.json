@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1791167094259,
+            "lastSyncTime": 1792057312991,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -7519,
-                "y": -2198,
-                "zoom": 0.76
+                "x": -5924,
+                "y": -647,
+                "zoom": 0.67
             },
             "filename": "刷体力",
-            "version": "v2.0.6"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_刷体力": {
@@ -329,7 +329,7 @@
         }
     },
     "判断剩余扫荡次数-前线试炼": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "已位于扫荡界面-前线试炼",
             "选择扫荡关卡开始-组件获取"
@@ -569,8 +569,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 8318,
-                "y": 870
+                "x": 8143,
+                "y": 1045
             }
         }
     },
@@ -653,8 +653,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9907,
-                "y": 1430
+                "x": 9918,
+                "y": 1262
             }
         }
     },
@@ -683,8 +683,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9929,
-                "y": 1134
+                "x": 9952,
+                "y": 933
             }
         }
     },
@@ -922,8 +922,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9564,
-                "y": 1316
+                "x": 9572,
+                "y": 1212
             }
         }
     },
@@ -954,6 +954,32 @@
             }
         }
     },
+    "正在使用扫荡卷-战术模拟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    863,
+                    642,
+                    193,
+                    58
+                ],
+                "template": [
+                    "扫荡卷图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "扫荡结束-返回主界面-战术模拟"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10748,
+                "y": 3412
+            }
+        }
+    },
     "消逝的光芒-首领剿灭": {
         "recognition": {
             "type": "OCR",
@@ -979,8 +1005,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8472,
-                "y": 326
+                "x": 8416,
+                "y": 121
             }
         }
     },
@@ -1006,8 +1032,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 8765,
-                "y": 377
+                "x": 8693,
+                "y": -18
             }
         }
     },
@@ -1036,8 +1062,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8452,
-                "y": -21
+                "x": 8422,
+                "y": -206
             }
         }
     },
@@ -1063,8 +1089,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 8772,
-                "y": -143
+                "x": 8793,
+                "y": -324
             }
         }
     },
@@ -1115,6 +1141,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10784,
@@ -1549,8 +1576,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9586,
-                "y": 1047
+                "x": 9583,
+                "y": 946
             }
         }
     },
@@ -1598,7 +1625,8 @@
     "选择扫荡关卡开始-组件获取": {
         "next": [
             "追歼退却",
-            "抢滩登陆"
+            "抢滩登陆",
+            "驱虎吞狼"
         ],
         "$__mpe_code": {
             "position": {
@@ -1765,8 +1793,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8482,
-                "y": 589
+                "x": 8406,
+                "y": 430
             }
         }
     },
@@ -1792,8 +1820,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 8778,
-                "y": 646
+                "x": 8692,
+                "y": 309
             }
         }
     },
@@ -1854,7 +1882,7 @@
         }
     },
     "首领剿灭选择关卡结束-首领剿灭": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "选择扫荡开始-首领剿灭",
             "首领剿灭选择具体关卡-首领剿灭"
@@ -1871,6 +1899,7 @@
             "灰烬重燃-首领剿灭",
             "消逝的光芒-首领剿灭",
             "野蛮生长-首领剿灭",
+            "最长的一天-首领剿灭",
             "[JumpBack]左侧关卡列表滑动-首领剿灭"
         ],
         "$__mpe_code": {
@@ -1937,29 +1966,115 @@
             }
         }
     },
-    "正在使用扫荡卷-战术模拟": {
+    "最长的一天-首领剿灭": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    863,
-                    642,
-                    193,
-                    58
+                    148,
+                    70,
+                    280,
+                    547
                 ],
-                "template": [
-                    "扫荡卷图标.png"
-                ],
-                "green_mask": true
+                "expected": [
+                    "最长"
+                ]
             }
         },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
         "next": [
-            "扫荡结束-返回主界面-战术模拟"
+            "[JumpBack]最长的一天-首领剿灭_第二次",
+            "首领剿灭选择关卡结束-首领剿灭"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10748,
-                "y": 3412
+                "x": 8353,
+                "y": 776
+            }
+        }
+    },
+    "最长的一天-首领剿灭_第二次": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    148,
+                    70,
+                    280,
+                    547
+                ],
+                "expected": [
+                    "最长"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8684,
+                "y": 592
+            }
+        }
+    },
+    "开始扫荡-驱虎吞狼": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "驱虎吞狼",
+                "roi_offset": [
+                    474,
+                    64,
+                    -6,
+                    54
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断剩余扫荡次数-前线试炼"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9843,
+                "y": 1568
+            }
+        }
+    },
+    "驱虎吞狼": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    460,
+                    38,
+                    183,
+                    681
+                ],
+                "expected": [
+                    "驱虎吞狼"
+                ]
+            }
+        },
+        "next": [
+            "开始扫荡-驱虎吞狼"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9527,
+                "y": 1558
             }
         }
     }

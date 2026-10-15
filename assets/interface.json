@@ -55,6 +55,18 @@
       "doc": "完成一次战术影像使用任务"
     },
     {
+      "name": "击败10个敌对单位",
+      "entry": "击败10个敌对单位开始",
+      "default_check": true,
+      "doc": "完成日常合约中击败10个敌对单位任务"
+    },
+    {
+      "name": "机兵强化一次",
+      "entry": "机兵强化一次开始",
+      "default_check": true,
+      "doc": "完成日常合约中强化机兵一次任务"
+    },
+    {
       "name": "刷体力 - 精英战役",
       "entry": "刷体力开始",
       "default_check": true,
@@ -102,6 +114,12 @@
       "doc": "扫荡战术模拟，消耗体力"
     },
     {
+      "name": "环岛密令",
+      "entry": "环岛密令开始",
+      "default_check": true,
+      "doc": "自动领取环岛密令任务奖励"
+    },
+    {
       "name": "领取日常奖励",
       "entry": "领取日常奖励开始",
       "default_check": true,
@@ -137,8 +155,20 @@
     "刷体力-首领剿灭-选择关卡": {
       "type": "select",
       "label": "选择关卡",
-      "default_case": "灰烬重燃",
+      "default_case": "最长的一天",
       "cases": [
+        {
+          "name": "最长的一天",
+          "label": "最长的一天",
+          "pipeline_override": {
+            "首领剿灭选择具体关卡-首领剿灭": {
+              "next": [
+                "最长的一天-首领剿灭",
+                "[JumpBack]左侧关卡列表滑动-首领剿灭"
+              ]
+            }
+          }
+        },
         {
           "name": "灰烬重燃",
           "label": "灰烬重燃",
@@ -206,8 +236,17 @@
     "刷体力-前线试炼-组件获取-选择关卡": {
       "type": "select",
       "label": "组件获取关卡",
-      "default_case": "追歼退却",
+      "default_case": "驱虎吞狼",
       "cases": [
+        {
+          "name": "驱虎吞狼",
+          "label": "驱虎吞狼",
+          "pipeline_override": {
+            "选择扫荡关卡开始-组件获取": {
+              "next": ["驱虎吞狼"]
+            }
+          }
+        },
         {
           "name": "追歼退却",
           "label": "追歼退却",

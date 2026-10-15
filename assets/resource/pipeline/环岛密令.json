@@ -1,0 +1,654 @@
+{
+    "$__mpe_config_环岛密令": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792063177087,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\环岛密令.json",
+            "savedViewport": {
+                "x": -5464,
+                "y": 492,
+                "zoom": 0.57
+            },
+            "filename": "环岛密令",
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_环岛密令": {
+        "$__mpe_code": {
+            "position": {
+                "x": 10619,
+                "y": 152
+            }
+        }
+    },
+    "全部领取每周任务奖励-环岛密令": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    829,
+                    230,
+                    128,
+                    53
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认每周任务奖励-环岛密令",
+            "[JumpBack]全部领取每周任务奖励-环岛密令_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11065,
+                "y": -962
+            }
+        }
+    },
+    "全部领取每周任务奖励-环岛密令_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    829,
+                    230,
+                    128,
+                    53
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11325,
+                "y": -1239
+            }
+        }
+    },
+    "判断有没有可领取任务-环岛密令": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    238,
+                    74,
+                    236,
+                    46
+                ],
+                "lower": [
+                    [
+                        254,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        254,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -101,
+                    16,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断有没有可领取周期任务-环岛密令",
+            "[JumpBack]判断有没有可领取任务-环岛密令_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10137,
+                "y": -1165
+            }
+        }
+    },
+    "判断有没有可领取任务-环岛密令_第二次": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    238,
+                    74,
+                    236,
+                    46
+                ],
+                "lower": [
+                    [
+                        254,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        254,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -101,
+                    16,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10461,
+                "y": -1423
+            }
+        }
+    },
+    "判断有没有可领取周期任务-环岛密令": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    26,
+                    151,
+                    971,
+                    40
+                ],
+                "lower": [
+                    [
+                        254,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        254,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -48,
+                    8,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "全部领取每周任务奖励-环岛密令",
+            "[JumpBack]判断有没有可领取周期任务-环岛密令_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10576,
+                "y": -1058
+            }
+        }
+    },
+    "判断有没有可领取周期任务-环岛密令_第二次": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    26,
+                    151,
+                    971,
+                    40
+                ],
+                "lower": [
+                    [
+                        254,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        254,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -48,
+                    8,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10881,
+                "y": -1332
+            }
+        }
+    },
+    "判断有没有可领取奖励-环岛密令": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    103,
+                    78,
+                    153,
+                    38
+                ],
+                "lower": [
+                    [
+                        254,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        254,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -101,
+                    16,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认领取可领取奖励-环岛密令",
+            "[JumpBack]判断有没有可领取奖励-环岛密令_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10172,
+                "y": -623
+            }
+        }
+    },
+    "判断有没有可领取奖励-环岛密令_第二次": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    103,
+                    78,
+                    153,
+                    38
+                ],
+                "lower": [
+                    [
+                        254,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        254,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -101,
+                    16,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10546,
+                "y": -225
+            }
+        }
+    },
+    "开始进行环岛密令判断-环岛密令": {
+        "next": [
+            "[JumpBack]判断有没有可领取任务-环岛密令",
+            "[JumpBack]判断有没有可领取奖励-环岛密令",
+            "环岛密令任务结束-环岛密令"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9692,
+                "y": -624
+            }
+        }
+    },
+    "环岛密令任务结束-环岛密令": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10191,
+                "y": 135
+            }
+        }
+    },
+    "环岛密令开始": {
+        "next": [
+            "进入环岛密令界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8749,
+                "y": -660
+            }
+        }
+    },
+    "确认奖励-环岛密令": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    549,
+                    646,
+                    189,
+                    68
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认奖励-环岛密令_第二次",
+            "确认奖励结束-环岛密令"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11029,
+                "y": -376
+            }
+        }
+    },
+    "确认奖励-环岛密令_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    549,
+                    646,
+                    189,
+                    68
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认奖励结束-环岛密令"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11378,
+                "y": -567
+            }
+        }
+    },
+    "确认奖励结束-环岛密令": {
+        "$__mpe_code": {
+            "position": {
+                "x": 11700,
+                "y": -230
+            }
+        }
+    },
+    "确认每周任务奖励-环岛密令": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    549,
+                    646,
+                    189,
+                    68
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认每周任务奖励-环岛密令_第二次",
+            "确认每周任务奖励结束-环岛密令"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11434,
+                "y": -933
+            }
+        }
+    },
+    "确认每周任务奖励-环岛密令_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    549,
+                    646,
+                    189,
+                    68
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认每周任务奖励结束-环岛密令"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11808,
+                "y": -1128
+            }
+        }
+    },
+    "确认每周任务奖励结束-环岛密令": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12175,
+                "y": -785
+            }
+        }
+    },
+    "确认领取可领取奖励-环岛密令": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    849,
+                    154,
+                    129,
+                    66
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认奖励-环岛密令",
+            "[JumpBack]确认领取可领取奖励-环岛密令_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10546,
+                "y": -575
+            }
+        }
+    },
+    "确认领取可领取奖励-环岛密令_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    849,
+                    154,
+                    129,
+                    66
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10925,
+                "y": -647
+            }
+        }
+    },
+    "进入环岛密令界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    306,
+                    10,
+                    106,
+                    65
+                ],
+                "template": [
+                    "环岛密令图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始进行环岛密令判断-环岛密令",
+            "[JumpBack]进入环岛密令界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9239,
+                "y": -699
+            }
+        }
+    },
+    "进入环岛密令界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    306,
+                    10,
+                    106,
+                    65
+                ],
+                "template": [
+                    "环岛密令图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9560,
+                "y": -1015
+            }
+        }
+    }
+}

@@ -1,0 +1,404 @@
+{
+    "$__mpe_config_关卡处理内处理": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792061708685,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\关卡处理内处理.json",
+            "savedViewport": {
+                "x": -7996,
+                "y": 262,
+                "zoom": 0.65
+            },
+            "filename": "关卡处理内处理",
+            "version": "v2.1.0"
+        }
+    },
+    "作战成功结束-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    552,
+                    486,
+                    174,
+                    78
+                ],
+                "expected": [
+                    "保存录像"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    46,
+                    118,
+                    -83,
+                    -22
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13382,
+                "y": -1462
+            }
+        }
+    },
+    "关卡处理内处理开始": {
+        "next": [
+            "判断是否位于关卡内-关卡处理内处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11797,
+                "y": -822
+            }
+        }
+    },
+    "关卡处理内处理结束-关卡处理内处理": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13654,
+                "y": 190
+            }
+        }
+    },
+    "关卡正常结束处理-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    419,
+                    304,
+                    441,
+                    84
+                ],
+                "expected": [
+                    "未拾取"
+                ]
+            }
+        },
+        "next": [
+            "取消悔棋-关卡处理内处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13353,
+                "y": -959
+            }
+        }
+    },
+    "关闭成就界面-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    583,
+                    139,
+                    113,
+                    73
+                ],
+                "expected": [
+                    "成就"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    66,
+                    -68,
+                    -77,
+                    -44
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13389,
+                "y": -1707
+            }
+        }
+    },
+    "判断是否位于关卡内-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1120,
+                    648,
+                    152,
+                    49
+                ],
+                "expected": [
+                    "开始战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始等待关卡挑战结束-关卡处理内处理",
+            "[JumpBack]判断是否位于关卡内-关卡处理内处理_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12238,
+                "y": -821
+            }
+        }
+    },
+    "判断是否位于关卡内-关卡处理内处理_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1120,
+                    648,
+                    152,
+                    49
+                ],
+                "expected": [
+                    "开始战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12571,
+                "y": -1076
+            }
+        }
+    },
+    "判断是否退出了关卡界面-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1262,
+                    381,
+                    2,
+                    2
+                ],
+                "expected": [
+                    "战斗"
+                ]
+            }
+        },
+        "next": [
+            "关卡处理内处理结束-关卡处理内处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13183,
+                "y": 225
+            }
+        }
+    },
+    "取消悔棋-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    458,
+                    405,
+                    146,
+                    58
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13840,
+                "y": -933
+            }
+        }
+    },
+    "开始关卡内自动战斗-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    826,
+                    6,
+                    138,
+                    84
+                ],
+                "expected": [
+                    "^自动$"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13334,
+                "y": -686
+            }
+        }
+    },
+    "开始等待关卡挑战结束-关卡处理内处理": {
+        "next": [
+            "[JumpBack]开始关卡内自动战斗-关卡处理内处理",
+            "[JumpBack]关卡正常结束处理-关卡处理内处理",
+            "[JumpBack]确认作战结束奖励-关卡处理内处理",
+            "[JumpBack]作战成功结束-关卡处理内处理",
+            "[JumpBack]关闭成就界面-关卡处理内处理",
+            "[JumpBack]还在关卡内等待结束-关卡处理内处理",
+            "[JumpBack]战斗失败退出-关卡处理内处理",
+            "[JumpBack]战斗失败确认撤退-关卡处理内处理",
+            "判断是否退出了关卡界面-关卡处理内处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12727,
+                "y": -828
+            }
+        }
+    },
+    "确认作战结束奖励-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    352,
+                    645,
+                    418,
+                    71
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13377,
+                "y": -1208
+            }
+        }
+    },
+    "还在关卡内等待结束-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    835,
+                    17,
+                    120,
+                    70
+                ],
+                "expected": [
+                    "^停止自动$"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13332,
+                "y": -456
+            }
+        }
+    },
+    "战斗失败退出-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    500,
+                    321,
+                    299,
+                    64
+                ],
+                "expected": [
+                    "战斗失败"
+                ]
+            }
+        },
+        "next": [
+            "战斗失败确认取消-关卡处理内处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13298,
+                "y": -240
+            }
+        }
+    },
+    "战斗失败确认取消-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    481,
+                    400,
+                    104,
+                    66
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13634,
+                "y": -197
+            }
+        }
+    },
+    "战斗失败确认撤退-关卡处理内处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    436,
+                    503,
+                    170,
+                    58
+                ],
+                "expected": [
+                    "撤退"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13237,
+                "y": 16
+            }
+        }
+    }
+}

@@ -1,0 +1,665 @@
+{
+    "$__mpe_config_机兵强化一次": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792063173237,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\机兵强化一次.json",
+            "savedViewport": {
+                "x": -5205,
+                "y": 921,
+                "zoom": 0.75
+            },
+            "filename": "机兵强化一次",
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_机兵强化一次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9410,
+                "y": 32
+            }
+        }
+    },
+    "使用一次强化材料-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1078,
+                    617,
+                    180,
+                    62
+                ],
+                "expected": [
+                    "强化"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "机兵强化一次开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10910,
+                "y": -455
+            }
+        }
+    },
+    "寻找机兵强化任务-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    542,
+                    129,
+                    428,
+                    425
+                ],
+                "expected": [
+                    "强化机兵"
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "机兵强化任务未完成",
+            "机兵强化任务已经完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7207,
+                "y": -1095
+            }
+        }
+    },
+    "未处于主界面-使用机兵强化": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6180,
+                "y": 1
+            }
+        }
+    },
+    "未找到任务-机兵强化-任务结束": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7308,
+                "y": -305
+            }
+        }
+    },
+    "机兵养成滑动至底端-机兵强化": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    180,
+                    609,
+                    16,
+                    10
+                ],
+                "end": [
+                    [
+                        190,
+                        237,
+                        10,
+                        16
+                    ]
+                ]
+            }
+        },
+        "repeat": 5,
+        "post_delay": 2000,
+        "next": [
+            "选择任意机兵部件-机兵强化"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9800,
+                "y": -730
+            }
+        }
+    },
+    "机兵强化一次开始": {
+        "post_delay": 2000,
+        "next": [
+            "进入拓殖许可界面-机兵强化",
+            "[JumpBack]未处于主界面-使用机兵强化"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5843,
+                "y": -547
+            }
+        }
+    },
+    "机兵强化任务已经完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找机兵强化任务-机兵强化",
+                "roi_offset": [
+                    -5,
+                    -23,
+                    611,
+                    82
+                ],
+                "expected": [
+                    "完成",
+                    "领取"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7699,
+                "y": -743
+            }
+        }
+    },
+    "机兵强化任务未完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找机兵强化任务-机兵强化",
+                "roi_offset": [
+                    -5,
+                    -23,
+                    611,
+                    82
+                ],
+                "expected": [
+                    "未完成",
+                    "前往"
+                ]
+            }
+        },
+        "next": [
+            "进入角色养成界面-机兵强化",
+            "[JumpBack]返回一次主界面开始-机兵强化"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7689,
+                "y": -1080
+            }
+        }
+    },
+    "滑动日常任务界面-机兵强化": {
+        "max_hit": 10,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    876,
+                    577,
+                    21,
+                    5
+                ],
+                "end": [
+                    [
+                        877,
+                        208,
+                        24,
+                        6
+                    ]
+                ],
+                "duration": [
+                    2500
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7217,
+                "y": -741
+            }
+        }
+    },
+    "返回一次主界面开始-机兵强化": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8137,
+                "y": -796
+            }
+        }
+    },
+    "进入具体的机兵配件界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    48,
+                    98,
+                    265,
+                    446
+                ],
+                "expected": [
+                    "左",
+                    "右",
+                    "干"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    57,
+                    76,
+                    2,
+                    -7
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入具体的机兵配件界面_第二次",
+            "机兵养成滑动至底端-机兵强化"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9340,
+                "y": -715
+            }
+        }
+    },
+    "进入具体的机兵配件界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    48,
+                    98,
+                    265,
+                    446
+                ],
+                "expected": [
+                    "左",
+                    "右",
+                    "干"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    57,
+                    76,
+                    2,
+                    -7
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9666,
+                "y": -998
+            }
+        }
+    },
+    "进入强化界面-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    898,
+                    612,
+                    358,
+                    71
+                ],
+                "expected": [
+                    "强化"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "使用一次强化材料-机兵强化",
+            "[JumpBack]进入强化界面-机兵强化_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10535,
+                "y": -582
+            }
+        }
+    },
+    "进入强化界面-机兵强化_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    898,
+                    612,
+                    358,
+                    71
+                ],
+                "expected": [
+                    "强化"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10868,
+                "y": -750
+            }
+        }
+    },
+    "进入拓殖许可界面-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    120,
+                    31,
+                    166,
+                    79
+                ],
+                "expected": [
+                    "许可"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入日常合约界面-机兵强化",
+            "[JumpBack]进入拓殖许可界面-机兵强化_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6254,
+                "y": -595
+            }
+        }
+    },
+    "进入拓殖许可界面-机兵强化_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    120,
+                    31,
+                    166,
+                    79
+                ],
+                "expected": [
+                    "许可"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6516,
+                "y": -226
+            }
+        }
+    },
+    "进入日常合约界面-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    538,
+                    72,
+                    692,
+                    65
+                ],
+                "expected": [
+                    "日常合约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入日常合约界面-机兵强化_第二次",
+            "寻找机兵强化任务-机兵强化",
+            "[JumpBack]滑动日常任务界面-机兵强化",
+            "未找到任务-机兵强化-任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6679,
+                "y": -597
+            }
+        }
+    },
+    "进入日常合约界面-机兵强化_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    538,
+                    72,
+                    692,
+                    65
+                ],
+                "expected": [
+                    "日常合约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7151,
+                "y": -1395
+            }
+        }
+    },
+    "进入机兵整备界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1119,
+                    614,
+                    130,
+                    74
+                ],
+                "expected": [
+                    "机兵整备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入具体的机兵配件界面",
+            "[JumpBack]进入机兵整备界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8960,
+                "y": -731
+            }
+        }
+    },
+    "进入机兵整备界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1119,
+                    614,
+                    130,
+                    74
+                ],
+                "expected": [
+                    "机兵整备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9294,
+                "y": -989
+            }
+        }
+    },
+    "进入角色养成界面-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1014,
+                    87,
+                    133,
+                    451
+                ],
+                "expected": [
+                    "机兵"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入角色养成界面-机兵强化_第二次",
+            "进入机兵整备界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8488,
+                "y": -1018
+            }
+        }
+    },
+    "进入角色养成界面-机兵强化_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1014,
+                    87,
+                    133,
+                    451
+                ],
+                "expected": [
+                    "机兵"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8875,
+                "y": -1170
+            }
+        }
+    },
+    "选择任意机兵部件-机兵强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    596,
+                    1238,
+                    99
+                ],
+                "expected": [
+                    "LV",
+                    "IV"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入强化界面-机兵强化",
+            "[JumpBack]选择任意机兵部件-机兵强化_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10123,
+                "y": -708
+            }
+        }
+    },
+    "选择任意机兵部件-机兵强化_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    596,
+                    1238,
+                    99
+                ],
+                "expected": [
+                    "LV",
+                    "IV"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10472,
+                "y": -917
+            }
+        }
+    }
+}
