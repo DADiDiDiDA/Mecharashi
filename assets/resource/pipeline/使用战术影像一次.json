@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792057598548,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\使用战术影像一次.json",
             "savedViewport": {
-                "x": -3924,
-                "y": 859,
-                "zoom": 0.67
+                "x": -7852,
+                "y": 1203,
+                "zoom": 1.12
             },
             "filename": "使用战术影像一次",
             "version": "v2.1.0"
@@ -98,7 +94,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": "寻找使用战术影像任务",
+                "roi": "寻找使用战术影像任务-使用战术影像",
                 "roi_offset": [
                     88,
                     -4,
@@ -125,7 +121,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": "寻找使用战术影像任务",
+                "roi": "寻找使用战术影像任务-使用战术影像",
                 "roi_offset": [
                     88,
                     -4,

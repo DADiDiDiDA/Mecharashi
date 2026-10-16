@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792063182816,
+            "lastSyncTime": 1792112310109,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\击败10个敌对单位.json",
             "savedViewport": {
-                "x": -3769,
-                "y": 742,
+                "x": -5819,
+                "y": 697,
                 "zoom": 0.57
             },
             "filename": "击败10个敌对单位",
@@ -19,8 +19,8 @@
     "$__mpe_external_关卡处理内处理开始_击败10个敌对单位": {
         "$__mpe_code": {
             "position": {
-                "x": 11976,
-                "y": -786
+                "x": 12305,
+                "y": -960
             }
         }
     },
@@ -50,8 +50,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11550,
-                "y": -513
+                "x": 11500,
+                "y": -345
             }
         }
     },
@@ -217,20 +217,22 @@
                 ]
             }
         },
+        "anchor": "任务是否可以结束了-击败10个敌对单位: 任务结束-击败10个敌对单位",
         "next": [
-            "关卡处理内处理开始"
+            "已位于关卡-处理开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11581,
-                "y": -828
+                "x": 11623,
+                "y": -863
             }
         }
     },
     "开始准备任务-击败10个敌对单位": {
         "post_delay": 2000,
         "next": [
-            "进入作战中心-击败10个敌对单位"
+            "进入作战中心-击败10个敌对单位",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -257,11 +259,11 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 2000,
+        "anchor": "再次进入1-1任务-击败10个敌对单位: 是否还位于战役界面-击败10个敌对单位",
+        "post_delay": 5000,
         "next": [
             "[JumpBack]是否还位于战役界面-击败10个敌对单位",
-            "[JumpBack]开始关卡内处理-击败10个敌对单位",
-            "任务结束-击败10个敌对单位"
+            "开始关卡内处理-击败10个敌对单位"
         ],
         "$__mpe_code": {
             "position": {
@@ -291,8 +293,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 12035,
-                "y": -1171
+                "x": 12087,
+                "y": -1324
             }
         }
     },
@@ -373,8 +375,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11693,
-                "y": -1219
+                "x": 11654,
+                "y": -1317
             }
         }
     },
@@ -754,6 +756,43 @@
             "position": {
                 "x": 9949,
                 "y": -1016
+            }
+        }
+    },
+    "已位于关卡-处理开始": {
+        "next": [
+            "判断关卡内处理是否结束",
+            "[JumpBack]关卡处理内处理开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11964,
+                "y": -791
+            }
+        }
+    },
+    "判断关卡内处理是否结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    246,
+                    4,
+                    183,
+                    55
+                ],
+                "expected": [
+                    "精英战役"
+                ]
+            }
+        },
+        "next": [
+            "任务结束-击败10个敌对单位"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12373,
+                "y": -851
             }
         }
     }

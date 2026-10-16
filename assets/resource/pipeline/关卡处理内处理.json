@@ -3,13 +3,9 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792061708685,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\关卡处理内处理.json",
             "savedViewport": {
-                "x": -7996,
-                "y": 262,
+                "x": -8048,
+                "y": 55,
                 "zoom": 0.65
             },
             "filename": "关卡处理内处理",
@@ -64,8 +60,8 @@
     "关卡处理内处理结束-关卡处理内处理": {
         "$__mpe_code": {
             "position": {
-                "x": 13654,
-                "y": 190
+                "x": 13679,
+                "y": 367
             }
         }
     },
@@ -148,8 +144,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "开始等待关卡挑战结束-关卡处理内处理",
-            "[JumpBack]判断是否位于关卡内-关卡处理内处理_第二次"
+            "[JumpBack]判断是否位于关卡内-关卡处理内处理_第二次",
+            "开始等待关卡挑战结束-关卡处理内处理"
         ],
         "$__mpe_code": {
             "position": {
@@ -179,8 +175,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 12571,
-                "y": -1076
+                "x": 12662,
+                "y": -1133
             }
         }
     },
@@ -189,13 +185,14 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    1262,
-                    381,
-                    2,
-                    2
+                    851,
+                    610,
+                    419,
+                    99
                 ],
                 "expected": [
-                    "战斗"
+                    "扫荡",
+                    "剩余次数"
                 ]
             }
         },
@@ -204,8 +201,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 13183,
-                "y": 225
+                "x": 13201,
+                "y": 356
             }
         }
     },

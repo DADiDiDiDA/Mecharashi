@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1791418243874,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -1038,
-                "y": 122,
-                "zoom": 0.65
+                "x": -315,
+                "y": 222,
+                "zoom": 0.57
             },
             "filename": "返回主界面",
-            "version": "v2.0.7"
+            "version": "v2.1.0"
         }
     },
     "下方点击文字返回": {
@@ -400,6 +396,7 @@
         }
     },
     "返回主界面开始": {
+        "timeout": 180000,
         "next": [
             "[JumpBack]右上角叉号关闭",
             "[JumpBack]等待更新结束",
