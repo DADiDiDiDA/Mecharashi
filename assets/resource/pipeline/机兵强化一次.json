@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792063173237,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\机兵强化一次.json",
             "savedViewport": {
-                "x": -5205,
-                "y": 921,
-                "zoom": 0.75
+                "x": -6421,
+                "y": 686,
+                "zoom": 0.69
             },
             "filename": "机兵强化一次",
             "version": "v2.1.0"
@@ -609,14 +605,15 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    20,
-                    596,
-                    1238,
-                    99
+                    18,
+                    518,
+                    327,
+                    159
                 ],
                 "expected": [
                     "LV",
-                    "IV"
+                    "IV",
+                    "1"
                 ]
             }
         },
@@ -630,8 +627,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10123,
-                "y": -708
+                "x": 10129,
+                "y": -705
             }
         }
     },
@@ -640,14 +637,15 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    20,
-                    596,
-                    1238,
-                    99
+                    18,
+                    518,
+                    327,
+                    159
                 ],
                 "expected": [
                     "LV",
-                    "IV"
+                    "IV",
+                    "1"
                 ]
             }
         },
