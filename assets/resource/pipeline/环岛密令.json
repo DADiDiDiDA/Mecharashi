@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792063177087,
+            "lastSyncTime": 1792466753184,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\环岛密令.json",
+            "filePath": "D:\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\环岛密令.json",
             "savedViewport": {
-                "x": -5464,
-                "y": 492,
-                "zoom": 0.57
+                "x": -4667,
+                "y": 506,
+                "zoom": 0.52
             },
             "filename": "环岛密令",
             "version": "v2.1.0"

@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792456116454,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\机兵强化一次.json",
             "savedViewport": {
-                "x": -6421,
-                "y": 686,
-                "zoom": 0.69
+                "x": -9040,
+                "y": 729,
+                "zoom": 0.91
             },
             "filename": "机兵强化一次",
             "version": "v2.1.0"
@@ -22,16 +26,16 @@
     },
     "使用一次强化材料-机兵强化": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1078,
-                    617,
-                    180,
-                    62
+                    1092,
+                    622,
+                    170,
+                    64
                 ],
-                "expected": [
-                    "强化"
+                "template": [
+                    "强化界面强化图标.png"
                 ]
             }
         },
@@ -319,16 +323,16 @@
     },
     "进入强化界面-机兵强化": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    898,
-                    612,
-                    358,
-                    71
+                    901,
+                    609,
+                    175,
+                    75
                 ],
-                "expected": [
-                    "强化"
+                "template": [
+                    "强化界面强化图标.png"
                 ]
             }
         },
@@ -338,38 +342,12 @@
         "post_delay": 2000,
         "next": [
             "使用一次强化材料-机兵强化",
-            "[JumpBack]进入强化界面-机兵强化_副本1"
+            "[JumpBack]进入强化界面-机兵强化_第二次"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 10535,
                 "y": -582
-            }
-        }
-    },
-    "进入强化界面-机兵强化_副本1": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    898,
-                    612,
-                    358,
-                    71
-                ],
-                "expected": [
-                    "强化"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 10868,
-                "y": -750
             }
         }
     },
@@ -657,6 +635,32 @@
             "position": {
                 "x": 10472,
                 "y": -917
+            }
+        }
+    },
+    "进入强化界面-机兵强化_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    901,
+                    609,
+                    175,
+                    75
+                ],
+                "template": [
+                    "强化界面强化图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10832,
+                "y": -819
             }
         }
     }

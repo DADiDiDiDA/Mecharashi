@@ -1,5 +1,6 @@
 {
   "MFAAvalonia": {
-    "action": "DoNothing"
+    "action": "DoNothing",
+    "post_delay": 2000
   }
 }
