@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792456116454,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\机兵强化一次.json",
             "savedViewport": {
-                "x": -9040,
-                "y": 729,
-                "zoom": 0.91
+                "x": -6245,
+                "y": 504,
+                "zoom": 0.67
             },
             "filename": "机兵强化一次",
             "version": "v2.1.0"
@@ -125,8 +121,9 @@
         "repeat": 5,
         "post_delay": 2000,
         "next": [
-            "选择任意机兵部件-机兵强化",
-            "[JumpBack]返回主界面开始"
+            "选择任意机兵部件-ocr-机兵强化",
+            "选择任意机兵部件-template-机兵强化",
+            "选择任意机兵部件-直接点击-机兵强化"
         ],
         "$__mpe_code": {
             "position": {
@@ -581,15 +578,15 @@
             }
         }
     },
-    "选择任意机兵部件-机兵强化": {
+    "选择任意机兵部件-ocr-机兵强化": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    18,
-                    518,
-                    327,
-                    159
+                    34,
+                    629,
+                    318,
+                    28
                 ],
                 "expected": [
                     "LV",
@@ -608,8 +605,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10129,
-                "y": -705
+                "x": 10159,
+                "y": -882
             }
         }
     },
@@ -664,6 +661,102 @@
             "position": {
                 "x": 10832,
                 "y": -819
+            }
+        }
+    },
+    "选择任意机兵部件-template-机兵强化": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    24,
+                    454,
+                    352,
+                    242
+                ],
+                "template": [
+                    "蓝色机兵品质图标.png",
+                    "紫色机兵品质图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    47,
+                    35,
+                    -13,
+                    -14
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入强化界面-机兵强化",
+            "[JumpBack]选择任意机兵部件-template-机兵强化_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10166,
+                "y": -518
+            }
+        }
+    },
+    "选择任意机兵部件-template-机兵强化_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    24,
+                    454,
+                    352,
+                    242
+                ],
+                "template": [
+                    "蓝色机兵品质图标.png",
+                    "紫色机兵品质图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    47,
+                    35,
+                    -13,
+                    -14
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10437,
+                "y": -238
+            }
+        }
+    },
+    "选择任意机兵部件-直接点击-机兵强化": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    70,
+                    602,
+                    34,
+                    26
+                ]
+            }
+        },
+        "next": [
+            "进入强化界面-机兵强化"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10128,
+                "y": -103
             }
         }
     }
