@@ -1,7 +1,7 @@
 {
   "interface_version": 2,
   "name": "Mecharashi",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "controller": [
     {
       "name": "桌面端",
