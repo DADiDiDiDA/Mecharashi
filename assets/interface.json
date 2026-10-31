@@ -10,8 +10,8 @@
         "class_regex": ".*",
         "window_regex": "^(钢岚|Mecharashi).*$",
         "screencap": "PrintWindow",
-        "mouse": "PostMessageWithCursorPos",
-        "keyboard": "PostMessageWithCursorPos"
+        "mouse": "Seize",
+        "keyboard": "Seize"
       }
     },
     {
