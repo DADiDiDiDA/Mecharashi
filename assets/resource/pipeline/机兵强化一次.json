@@ -4,8 +4,8 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -6245,
-                "y": 504,
+                "x": -6234,
+                "y": 430,
                 "zoom": 0.67
             },
             "filename": "机兵强化一次",
@@ -669,10 +669,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    24,
-                    454,
-                    352,
-                    242
+                    13,
+                    347,
+                    361,
+                    218
                 ],
                 "template": [
                     "蓝色机兵品质图标.png",
@@ -708,10 +708,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    24,
-                    454,
-                    352,
-                    242
+                    13,
+                    347,
+                    361,
+                    218
                 ],
                 "template": [
                     "蓝色机兵品质图标.png",
