@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790931586656,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Mecharashi\\assets\\resource\\pipeline\\灰烬行动.json",
             "savedViewport": {
-                "x": -1986,
-                "y": -639,
-                "zoom": 0.49
+                "x": -1545,
+                "y": -333,
+                "zoom": 0.4
             },
             "filename": "灰烬行动",
-            "version": "v2.0.6"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_灰烬行动": {
@@ -24,13 +20,13 @@
             }
         }
     },
-    "再次启动检查": {
+    "再次启动检查-灰烬行动": {
         "max_hit": 1,
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5036,
-                "y": 1521
+                "x": 5025,
+                "y": 1590
             }
         }
     },
@@ -77,9 +73,9 @@
             "[JumpBack]寻找待处理的灰烬行动",
             "[JumpBack]选择第一个行动处理方式",
             "[JumpBack]确认行动奖励",
-            "[JumpBack]行动派遣开始",
+            "[JumpBack]行动派遣判断",
             "未发现可用的派遣",
-            "[JumpBack]再次启动检查"
+            "[JumpBack]再次启动检查-灰烬行动"
         ],
         "$__mpe_code": {
             "position": {
@@ -125,7 +121,7 @@
             }
         }
     },
-    "行动派遣开始": {
+    "行动派遣判断": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -140,10 +136,11 @@
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
         "post_delay": 2000,
+        "next": [
+            "选择火花塞",
+            "行动派遣尝试开始1"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 5064,
@@ -258,8 +255,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 4409,
-                "y": 455
+                "x": 4475,
+                "y": 363
             }
         }
     },
@@ -294,6 +291,249 @@
             "position": {
                 "x": 5101,
                 "y": 583
+            }
+        }
+    },
+    "选择火花塞": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    554,
+                    1039,
+                    68
+                ],
+                "expected": [
+                    "火花塞"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "next": [
+            "行动派遣尝试开始1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5354,
+                "y": 1045
+            }
+        }
+    },
+    "行动派遣尝试开始1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1108,
+                    635,
+                    96,
+                    65
+                ],
+                "expected": [
+                    "派遣"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择创新动力",
+            "行动派遣尝试结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5600,
+                "y": 1269
+            }
+        }
+    },
+    "行动派遣尝试开始2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1108,
+                    635,
+                    96,
+                    65
+                ],
+                "expected": [
+                    "派遣"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择GeekX",
+            "行动派遣尝试结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6214,
+                "y": 1222
+            }
+        }
+    },
+    "行动派遣尝试开始3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1108,
+                    635,
+                    96,
+                    65
+                ],
+                "expected": [
+                    "派遣"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择武装工坊",
+            "行动派遣尝试结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6776,
+                "y": 883
+            }
+        }
+    },
+    "行动派遣尝试开始4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1108,
+                    635,
+                    96,
+                    65
+                ],
+                "expected": [
+                    "派遣"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "行动派遣尝试结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7467,
+                "y": 1085
+            }
+        }
+    },
+    "选择创新动力": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    554,
+                    1039,
+                    68
+                ],
+                "expected": [
+                    "创新动力"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "next": [
+            "行动派遣尝试开始2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5887,
+                "y": 1071
+            }
+        }
+    },
+    "选择GeekX": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    554,
+                    1039,
+                    68
+                ],
+                "expected": [
+                    "Geek"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "next": [
+            "行动派遣尝试开始3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6489,
+                "y": 979
+            }
+        }
+    },
+    "选择武装工坊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    554,
+                    1039,
+                    68
+                ],
+                "expected": [
+                    "武装工坊"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "next": [
+            "行动派遣尝试开始4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7126,
+                "y": 1062
+            }
+        }
+    },
+    "行动派遣尝试结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7362,
+                "y": 2021
             }
         }
     }
