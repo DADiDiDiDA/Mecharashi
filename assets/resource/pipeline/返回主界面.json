@@ -363,6 +363,7 @@
         }
     },
     "是否需要启动游戏": {
+        "post_delay": 2000,
         "next": [
             "不需要启动游戏",
             "需要启动游戏"
@@ -407,7 +408,8 @@
             "[JumpBack]开始进入游戏",
             "[JumpBack]返回到主菜单",
             "[JumpBack]左上角返回",
-            "[JumpBack]下方点击文字返回"
+            "[JumpBack]下方点击文字返回",
+            "[JumpBack][Anchor]启动游戏一次"
         ],
         "$__mpe_code": {
             "position": {
@@ -443,6 +445,7 @@
         }
     },
     "需要启动游戏": {
+        "anchor": "启动游戏一次",
         "action": {
             "type": "StartApp",
             "param": {
