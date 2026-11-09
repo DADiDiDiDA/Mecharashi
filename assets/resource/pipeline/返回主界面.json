@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -315,
-                "y": 222,
-                "zoom": 0.57
+                "x": -765,
+                "y": -291,
+                "zoom": 0.7
             },
             "filename": "返回主界面",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "下方点击文字返回": {
@@ -409,7 +409,7 @@
             "[JumpBack]返回到主菜单",
             "[JumpBack]左上角返回",
             "[JumpBack]下方点击文字返回",
-            "[JumpBack][Anchor]启动游戏一次"
+            "[Anchor][JumpBack]启动游戏一次"
         ],
         "$__mpe_code": {
             "position": {
@@ -445,12 +445,14 @@
         }
     },
     "需要启动游戏": {
-        "anchor": "启动游戏一次",
         "action": {
             "type": "StartApp",
             "param": {
                 "package": "com.zlongame.pd.mecharashi"
             }
+        },
+        "anchor": {
+            "启动游戏一次": "需要启动游戏单引用"
         },
         "post_delay": 2000,
         "next": [
@@ -460,6 +462,56 @@
             "position": {
                 "x": 997,
                 "y": 169
+            }
+        }
+    },
+    "需要启动游戏单引用": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.zlongame.pd.mecharashi"
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "需要启动游戏单引用-限流",
+            "需要启动游戏单引用-清锚点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1247,
+                "y": 403
+            }
+        }
+    },
+    "需要启动游戏单引用-限流": {
+        "recognition": {
+            "type": "DirectHit"
+        },
+        "max_hit": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": 1497,
+                "y": 637
+            }
+        }
+    },
+    "需要启动游戏单引用-清锚点": {
+        "anchor": {
+            "启动游戏一次": ""
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1747,
+                "y": 871
+            }
+        }
+    },
+    "$__mpe_anchor_启动游戏一次_返回主界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2090,
+                "y": 1483
             }
         }
     }
