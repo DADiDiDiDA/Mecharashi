@@ -295,6 +295,7 @@
         }
     },
     "选择火花塞": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -443,6 +444,7 @@
         }
     },
     "选择创新动力": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -472,6 +474,7 @@
         }
     },
     "选择GeekX": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -501,6 +504,7 @@
         }
     },
     "选择武装工坊": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
