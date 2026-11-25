@@ -155,6 +155,7 @@
         }
     },
     "判断是否位于关卡内-关卡处理内处理-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

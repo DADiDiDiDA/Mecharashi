@@ -284,6 +284,7 @@
         }
     },
     "进入具体的机兵配件界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -381,6 +382,7 @@
         }
     },
     "进入拓殖许可界面-机兵强化-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -497,6 +499,7 @@
         }
     },
     "进入机兵整备界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -553,6 +556,7 @@
         }
     },
     "进入角色养成界面-机兵强化-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -611,6 +615,7 @@
         }
     },
     "选择任意机兵部件-机兵强化-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -639,6 +644,7 @@
         }
     },
     "进入强化界面-机兵强化-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -704,6 +710,7 @@
         }
     },
     "选择任意机兵部件-template-机兵强化_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

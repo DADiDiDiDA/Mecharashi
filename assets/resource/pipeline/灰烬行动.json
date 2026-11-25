@@ -179,6 +179,7 @@
         }
     },
     "进入作战中心-灰烬行动-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -235,6 +236,7 @@
         }
     },
     "进入灰烬行动界面-灰烬行动-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

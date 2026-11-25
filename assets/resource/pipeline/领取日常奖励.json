@@ -67,6 +67,7 @@
         }
     },
     "进入拓殖许可界面-日常奖励-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

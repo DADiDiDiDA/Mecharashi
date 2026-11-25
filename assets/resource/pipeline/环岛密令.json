@@ -55,6 +55,7 @@
         }
     },
     "全部领取每周任务奖励-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -130,6 +131,7 @@
         }
     },
     "判断有没有可领取任务-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -224,6 +226,7 @@
         }
     },
     "判断有没有可领取周期任务-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -318,6 +321,7 @@
         }
     },
     "判断有没有可领取奖励-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -428,6 +432,7 @@
         }
     },
     "确认奖励-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -495,6 +500,7 @@
         }
     },
     "确认每周任务奖励-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -562,6 +568,7 @@
         }
     },
     "确认领取可领取奖励-环岛密令-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -622,6 +629,7 @@
         }
     },
     "进入环岛密令界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

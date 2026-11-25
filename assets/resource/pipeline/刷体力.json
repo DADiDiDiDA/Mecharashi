@@ -448,6 +448,7 @@
         }
     },
     "前线试炼-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -957,6 +958,7 @@
         }
     },
     "战术模拟-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1012,6 +1014,7 @@
         }
     },
     "战术模拟选择自动演算-战术模拟-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1497,6 +1500,7 @@
         }
     },
     "精英战役-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1772,6 +1776,7 @@
         }
     },
     "进入作战中心-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1828,6 +1833,7 @@
         }
     },
     "进入拓展委托界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1885,6 +1891,7 @@
         }
     },
     "进入第一章白枫市-精英战役-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1990,6 +1997,7 @@
         }
     },
     "选择扫荡开始-第二次-首领剿灭": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -2077,6 +2085,7 @@
         }
     },
     "选择第一个存档-首领剿灭-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -2238,6 +2247,7 @@
         }
     },
     "首领剿灭-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

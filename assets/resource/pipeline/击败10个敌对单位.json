@@ -273,6 +273,7 @@
         }
     },
     "开始进入1-1任务-击败10个敌对单位-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -330,6 +331,7 @@
         }
     },
     "开始进入白枫市关卡界面-击败10个敌对单位-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -507,6 +509,7 @@
         }
     },
     "进入作战中心-击败10个敌对单位-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -563,6 +566,7 @@
         }
     },
     "进入拓展委托-击败10个敌对单位-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -620,6 +624,7 @@
         }
     },
     "进入拓殖许可界面-击败10个敌对单位-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -736,6 +741,7 @@
         }
     },
     "进入精英战役-击败10个敌对单位-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
